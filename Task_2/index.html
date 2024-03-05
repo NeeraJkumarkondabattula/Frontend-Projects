@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share The Link</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button type="button" class="share-btn">
+      <img src="./assets//share.png" alt="icon" class="share-icon" />
+    </button>
+    <section class="copy-link-model">
+      <form>
+        <header>
+          <h2>Share the link</h2>
+          <button class="close-btn" type="button">
+            <img src="./assets/cross-small.png" alt="icon" class="close-icon" />
+          </button>
+        </header>
+        <div class="copy-link-section content">
+          <div class="copy-link-wrapper">
+            <input
+              id="copy-link-input"
+              type="text"
+              required
+              value="https://example.com/share.this"
+              readonly />
+            <button class="copy-btn" type="button">
+              <img src="./assets/link.png" alt="icon" class="copy-icon" />
+              <span id="copy-text">Copied!</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
